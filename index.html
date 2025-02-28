@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashank's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        nav {
+            background: #333;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-left {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .nav-right a {
+            color: #ffffff;
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .nav-right {
+        display: flex;
+        align-items: center;
+        margin-right: 40px; /* Reduce this value to move it left */
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            flex-direction: column;
+        }
+        .home-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .home-text {
+            max-width: 50%;
+        }
+        .home-text h1 {
+            font-size: 48px;
+        }
+        .home-text p {
+            font-size: 20px;
+        }
+        .home-image img {
+            max-width: 300px;
+            border-radius: 50%;
+        }
+        .full-page {
+            height: 100vh;
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .about-image img {
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .about-text {
+            max-width: 50%;
+            text-align: left;
+        }
+        .skills-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .skills-column {
+            width: 48%;
+        }
+        .skill {
+            margin: 10px 0;
+        }
+        .skill p {
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .skill-bar {
+            width: 100%;
+            background: #333;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        .skill-fill {
+            height: 100%;
+            background: #4dabf7;
+            text-align: right;
+            line-height: 20px;
+            color: white;
+            padding-right: 10px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 100%;
+        }
+        .project-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .project-image img {
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        .project-text {
+            max-width: 50%;
+            text-align: left;
+        }
+        .cv-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.cv-button:hover {
+    background-color: #cc5500;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">Shashank C</div>
+        <div class="nav-right">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="C:\Users\shash\Shashank_Portfolio\Shashank-C_Resume (2025).pdf" download class="cv-button">Download CV</a>
+        </div>
+    </nav>
+    
+    <section id="home" class="full-page">
+        <div class="home-content">
+            <div class="home-text">
+                <h1>Hi, <br> I'm Shashank</h1>
+                <p>A passionate engineering student with a strong background in Data Science, ML, and Python.</p>
+            </div>
+            <div class="home-image">
+                <img src="C:\Users\shash\Shashank_Portfolio\img\WhatsApp Image 2025-02-03 at 19.30.22_884aba5e.jpg" alt="Shashank's Photo">
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="full-page">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="C:\Users\shash\Shashank_Portfolio\img\technology-illustration-hd.jpg" alt="Shashank's Photo">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hello! I'm Shashank C, a final-year engineering student passionate about creating impactful solutions through code. I am an aspiring AI/ML developer with a strong foundation in Python and a growing passion for machine learning and data science. With hands-on experience in building predictive models, data pipelines, and deploying real-time solutions, I’m eager to apply my skills to solve complex challenges. Continuously learning and growing in the field, I aim to contribute to impactful AI/ML projects that drive innovation.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="full-page">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-content">
+                <div class="project-image">
+                    <img src="C:\Users\shash\Shashank_Portfolio\img\sales-forecast.webp" alt="Sales Forecasting Model">
+                </div>
+                <div class="project-text">
+                    <h3>Sales Forecasting Model</h3>
+                    <p>Developed a predictive model for sales forecasting using machine learning techniques, enhancing decision-making with accurate demand prediction.</p>
+                </div>
+            </div>
+            <div class="project-content">
+                <div class="project-image">
+                    <img src="C:\Users\shash\Shashank_Portfolio\img\dormakaba-Blog-Post-pictures-_-1024-x-683-83.webp" alt="Credit Card Fraud Detection">
+                </div>
+                <div class="project-text">
+                    <h3>Credit Card Fraud Detection Using Facial Recognition</h3>
+                    <p>Implemented a fraud detection system integrating facial recognition to verify cardholder identity, increasing transaction security.</p>
+                </div>
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-top: 20px;">
+                Look for more projects on my <a href="https://github.com/Shashank0769" target="_blank" style="color: #ff6600;">GitHub</a>
+            </p>
+            
+        </div>
+    </section>
+
+    <section id="skills" class="full-page">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skills-column">
+                <div class="skill"><p>Python (90%)</p><div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div></div>
+                <div class="skill"><p>Data Analysis (65%)</p><div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div></div>
+                <div class="skill"><p>Generative AI (80%)</p><div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div></div>
+            </div>
+            <div class="skills-column">
+                <div class="skill"><p>C (50%)</p><div class="skill-bar"><div class="skill-fill" style="width: 50%;"></div></div></div>
+                <div class="skill"><p>Data Science (75%)</p><div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div></div>
+                <div class="skill"><p>Communication Skills (85%)</p><div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div></div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="full-page">
+        <h2>Contact</h2>
+        <p>Email: shashankindian26@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/shashank-c-966755249/">linkedin.com/in/shashank-c-966755249</a></p>
+        <p>GitHub: <a href="https://github.com/Shashank0769">github.com/Shashank0769</a></p>
+    </section>
+</body>
+</html>
